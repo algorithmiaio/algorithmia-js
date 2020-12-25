@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mocha Tests</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <text id='result'></text>
+
+        <script src="../node_modules/mocha/mocha.js"></script>
+        <script src="../node_modules/mocha-teamcity-reporter/lib/teamcityBrowser.js"></script>
+        <script src="../node_modules/chai/chai.js"></script>
+        <script src="../dist/algorithmia-0.2.1.js"></script>
+        <script>mocha.setup('bdd');</script>
+        <script src="algorithmiaTest.js"></script>
+        
+        <script lang="javascript">
+           
+            function algoCalback(error, result){
+                document.getElementById('result').innerText = result;
+                mocha.run();
+            }
+            Algorithmia.query("demo/Hello", "simA5FKPViIy3uQFcDybvQ9lj3q1" , "HAL 9000", algoCalback);
+        </script>
+
+    </body>
+</html>

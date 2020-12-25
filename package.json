@@ -1,0 +1,27 @@
+{
+  "name": "algorithmia-js",
+  "version": "1.0.0",
+  "description": "algorithmia-js client lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha-headless-chrome -f test/testRunner.html -r nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algorithmiaio/algorithmia-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/algorithmiaio/algorithmia-js/issues"
+  },
+  "homepage": "https://github.com/algorithmiaio/algorithmia-js#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "mocha-teamcity-reporter": "^3.0.0"
+  },
+  "dependencies": {
+    "mocha-headless-chrome": "^3.1.0"
+  }
+}
