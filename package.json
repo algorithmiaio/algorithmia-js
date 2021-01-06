@@ -4,7 +4,7 @@
   "description": "algorithmia-js client lib",
   "main": "index.js",
   "scripts": {
-    "test": "mocha-headless-chrome -f test/testRunner.html?key=\"$npm_config_key\" -r nyan "
+    "test": "mocha-headless-chrome -f test/testRunner.html?key=\"$API_KEY\" -r nyan "
   },
   "repository": {
     "type": "git",
