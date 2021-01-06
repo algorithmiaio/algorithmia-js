@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mocha Tests</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <text id='result'></text>
+
+        <script src="../node_modules/mocha/mocha.js"></script>
+        <script src="../node_modules/mocha-teamcity-reporter/lib/teamcityBrowser.js"></script>
+        <script src="../node_modules/chai/chai.js"></script>
+        <script src="../dist/algorithmia-0.2.1.js"></script>
+        <script>mocha.setup('bdd');</script>
+        <script src="algorithmiaTest.js"></script>
+
+        <script lang="javascript">
+                mocha.run();
+        </script>
+
+    </body>
+</html>
