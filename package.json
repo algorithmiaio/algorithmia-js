@@ -4,7 +4,7 @@
   "description": "algorithmia-js client lib",
   "main": "index.js",
   "scripts": {
-    "test": "mocha-headless-chrome -f test/testRunner.html -r nyan"
+    "test": "mocha-headless-chrome -f test/testRunner.html?key=\"$npm_config_key\" -r nyan "
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.0.1",
+    "mocha-headless-chrome": "^3.1.0",
     "mocha-teamcity-reporter": "^3.0.0"
   },
-  "dependencies": {
-    "mocha-headless-chrome": "^3.1.0"
-  }
+  "dependencies": {}
 }
