@@ -13,4 +13,4 @@ test:
   script:
   - npm install mocha-headless-chrome -g 
   - if [ -z $API_KEY ]; then echo "Algorithmia API key not defined"; exit 1; fi
-  - npm test --key=$API_KEY
+  - npm test
