@@ -1,4 +1,4 @@
-image: node:14.15.4
+image: buildkite/puppeteer:5.2.1
 stages:
   - test
 
@@ -11,7 +11,6 @@ variables:
 test:
   stage: test
   script:
-  - sudo npm install -g puppeteer --unsafe-perm=true
-  - npm install mocha-headless-chrome -g 
+  - npm install
   - if [ -z $API_KEY ]; then echo "Algorithmia API key not defined"; exit 1; fi
   - npm test
