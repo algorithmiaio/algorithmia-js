@@ -18,7 +18,7 @@
   "homepage": "https://github.com/algorithmiaio/algorithmia-js#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1",
+    "mocha": "^10.1.0",
     "mocha-headless-chrome": "^3.1.0",
     "mocha-teamcity-reporter": "^3.0.0"
   },
